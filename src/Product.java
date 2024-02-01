@@ -3,6 +3,8 @@
  *
  * @author Mairead Meagher, Siobhan Drohan
  */
+// conor
+
 public class Product {
 
     private String productName ;    // max length = 20 characters, default value is "".
