@@ -4,7 +4,7 @@
  * @author Mairead Meagher, Siobhan Drohan
  */
 // conor
-    //
+    //  testing up;oad after rebase
 
 public class Product {
 
