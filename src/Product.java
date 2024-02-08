@@ -26,7 +26,6 @@ public class Product {
      * @param unitCost    Unit cost of the product - valid values are any positive number
      */
     public Product(String productName, int productCode, double unitCost, boolean inCurrentProductLine) {
-
         this.productName = productName;
         this.unitCost = unitCost;
         setProductCode(productCode);
@@ -77,42 +76,25 @@ public class Product {
         if ((productCode >= 1000) && (productCode <= 5000)) {
             this.productCode = productCode;
         }
-        /**
-         * Updates the Product Name to the value passed as a parameter
-         * @param productName The new Product Name
-         */
-        public void setProductName (String productName){
-            if (productName ! = null){
+        public void setProductName(String productName) {
+            if (productName != null) {
                 if (productName.length() <= 20) {
                     this.productName = productName;
                 }
             }
         }
-        /**
-         * Updates the Unit Cost to the value passed as a parameter
-         * @param unitCost The new unit cost for the product
-         */
-        public void setUnitCost ( double unitCost){
+        public void setUnitCost(double unitCost) {
             if ((unitCost > 0) && (unitCost <= 99999)) {
                 this.unitCost = unitCost;
             }
-            /**
-             * Updates the boolean indicating whether the product is in the current product line or not.
-             * @param inCurrentProductLine Indicator that determines if the product is in the current product line or not.
-             */
-            public void setInCurrentProductLine ( boolean inCurrentProductLine){
-                this.inCurrentProductLine = inCurrentProductLine;
-            }
+            public void setInCurrentProductLine(boolean inCurrentProductLine)
+            this.inCurrentProductLine = inCurrentProductLine;
 
-            /**
-             * Builds a String representing a user-friendly representation of the object state
-             * @return Details of the specific product
-             */
             public String toString() {
                 return "Product description: " + productName
                         + ", product code: " + productCode
                         + ", unit cost: " + unitCost
-                        + ", currently in product line: " + (inCurrentProductLine 'Yes' :'No');
+                        + ", currently in product line: " + (inCurrentProductLine 'Y':'N');
 
             }
 
